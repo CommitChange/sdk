@@ -48,17 +48,20 @@ commitchange.createIframe = (source) => {
 // return an object of key/vals corresponing to each param
 commitchange.getParamsFromButton = (elem) => {
   let options = {
-    type: elem.getAttribute('data-type')
+    offsite: 't'
+  , type: elem.getAttribute('data-type')
   , custom_amounts: elem.getAttribute('data-custom-amounts') || elem.getAttribute('data-amounts')
   , campaign_id: elem.getAttribute('data-campaign-id')
   , gift_option_id: elem.getAttribute('data-gift-option-id')
   , redirect: elem.getAttribute('data-redirect')
   , designation: elem.getAttribute('data-designation')
   , multiple_designations: elem.getAttribute('data-multiple-designations')
-  , hide_dedication: 't'
+  , hide_dedication: elem.getAttribute('data-hide-dedication')
   , designations_prompt: elem.getAttribute('data-designations-prompt')
   , single_amount: elem.getAttribute('data-single-amount') || elem.getAttribute('data-amount')
   , designation_desc: elem.getAttribute('data-designation-desc') || elem.getAttribute('data-description')
+
+
   }
   // Remove false values from the options
   for(let key in options) {
