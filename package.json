@@ -4,8 +4,8 @@
   "description": "CommitChange js sdk",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify index.js -t babelify | uglifyjs > bundle.js"
+    "watch": "watchify index.js -o build.js -t babelify -v",
+    "build": "browserify index.js -t babelify | uglifyjs > build.js -v"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "babel-preset-es2015": "6.14.0",
     "babelify": "7.3.0",
     "browserify": "13.1.0",
-    "uglify": "0.1.5"
+    "uglify": "0.1.5",
+    "watchify": ^3.8.0"
   }
 }

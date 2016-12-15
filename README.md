@@ -9,5 +9,5 @@ More specifically, the code does the following:
 
 ### Build
 
-Run `npm run build`, which will generate `bundle.js`, which can be copied to the hosted location (for not, it should be copied into `public/js/donate-button.v2.js`).
+Run `npm run build`, which will generate `bundle.js`, which can be copied to the hosted location (it should be copied into commitchange.com repo at `public/js/donate-button.v2.js`).
 
