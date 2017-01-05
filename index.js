@@ -51,6 +51,7 @@ commitchange.getParamsFromButton = (elem) => {
     offsite: 't'
   , type: elem.getAttribute('data-type')
   , custom_amounts: elem.getAttribute('data-custom-amounts') || elem.getAttribute('data-amounts')
+  , custom_fields: elem.getAttribute('data-custom-fields')
   , campaign_id: elem.getAttribute('data-campaign-id')
   , gift_option_id: elem.getAttribute('data-gift-option-id')
   , redirect: elem.getAttribute('data-redirect')
