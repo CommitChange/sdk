@@ -9,5 +9,10 @@ More specifically, the code does the following:
 
 ### Build
 
-Go into the donate-widget directory and run build.sh. It will generate `bundle.js` which can be copied to the hosted location (for not, it should be copied into `public/js/donate-button.v2.js`).
+(if not done already)
+sudo npm install gulp-cli -g
+npm install
+
+gulp button
+This creates public/js/donate-button.v2.js + the sourcemap
 

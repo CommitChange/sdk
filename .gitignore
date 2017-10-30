@@ -1,3 +1,6 @@
+config/config.json
+public/js/donate-button.v2.js
+public/js/maps/donate-button.v2.js.map
 node_modules
 .npm-debug
 bundle.js
